@@ -7,8 +7,8 @@ module.exports = {
     watch: true,
     performance: {
         hints: 'error', // Change 'warning' to 'error' to hide the warnings
-        maxAssetSize: 1024 * 1024, // 1024 KiB
-        maxEntrypointSize: 1024 * 1024, // 1024 KiB
+        maxAssetSize: 3048 * 3048, // 3048 KiB
+        maxEntrypointSize: 3048 * 3048, // 3048 KiB
     },
     optimization: {
         minimize: false,

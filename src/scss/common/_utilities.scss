@@ -1,187 +1,76 @@
-// .font12 {
-//     font-size: $font12;
-// }
-
-// .font14 {
-//     font-size: $font14;
-// }
-
-// .font17 {
-//     font-size: $font17;
-// }
-
-// .font19 {
-//     font-size: $font19;
-// }
-
-// .font23 {
-//     font-size: $font23;
-// }
-
-// .font28 {
-//     font-size: $font28;
-// }
-
-// .font38 {
-//     font-size: $font38;
-// }
-
-// .font48 {
-//     font-size: $font48;
-// }
-
-// .font57 {
-//     font-size: $font57;
-// }
-
-// .font80 {
-//     font-size: $font80;
-// }
-
-// .font105 {
-//     font-size: $font105;
-// }
-
-// .font115 {
-//     font-size: $font115;
-// }
-
-// .font134 {
-//     font-size: $font134;
-// }
-
-// .font234 {
-//     font-size: $font234;
-// }
-
-// .font274 {
-//     font-size: $font274;
-// }
-
-// .font288 {
-//     font-size: $font288;
-// }
-// em
-
-.fontX {
-    font-size: $fontX;
+.font0_9 {
+  font-size: $font0_9;
 }
-
+.font1_1 {
+  font-size: $font1_1;
+}
+.font1_2 {
+  font-size: $font1_2;
+}
+.font1_39 {
+  font-size: $font1_39;
+}
+.font1_5 {
+  font-size: $font1_5;
+}
+.font1_8 {
+  font-size: $font1_8;
+}
 .font2 {
-    font-size: $font2;
+  font-size: $font2;
 }
-
-.font2X {
-    font-size: $font2X;
+.font2_5 {
+  font-size: $font2_5;
 }
-.font4X {
-    font-size: $font4X;
+.font3_35 {
+  font-size: $font3_35;
 }
-
+.font3_5 {
+  font-size: $font3_5;
+}
+.font4_1 {
+  font-size: $font4_1;
+}
+.font4_2 {
+  font-size: $font4_2;
+}
 .font6 {
-    font-size: $font6;
+  font-size: $font6;
 }
-
 .font7 {
-    font-size: $font7;
+  font-size: $font7;
+}
+.font12_1 {
+  font-size: $font12_1;
+}
+.font14_3 {
+  font-size: $font14_3;
+}
+.font15 {
+  font-size: $font15;
 }
 
-.font6v {
-    font-size: $font6V;
+//
+.leading1_1 {
+  line-height: $leading1_1;
 }
 
-.font12 {
-    font-size: $font12;
-}
-
-.font14 {
-    font-size: $font14;
-}
-
-// 
-.leadingX {
-    line-height: $leadingX
-}
-
-.leadingY {
-    line-height: $leadingY
+.leading1_2 {
+  line-height: $leading1_2;
 }
 
 .leading23 {
-    line-height: $leading23
+  line-height: $leading23;
 }
 
 .text-BFBFBF {
-    color: $color-BFBFBF !important;
+  color: $color-BFBFBF !important;
 }
 
-.spaceY {
-    letter-spacing: $spaceY;
+.space1_2 {
+  letter-spacing: $space1_2;
 }
 
-
-
-@include media-breakpoint-down(lg) {
-    .resfontlg4 {
-        font-size: $font4;
-    }
-    .resfontlg8 {
-        font-size: $resfont8;
-    }
-    .resfontlg16 {
-        font-size: $resFont16;
-    }
-    .resfontlg18 {
-        font-size: $resFont18;
-    }
-    .resfontlg2 {
-        font-size: $font2;
-    }
-}
-
-@include media-breakpoint-down(md) {
-    .resfontmd14 {
-        font-size: $resFont14;
-    }
-    .resfontmd12 {
-        font-size: $font12;
-    }
-    .resfontmd18 {
-        font-size: $resFont18;
-    }
-
-    .resfontmd20 {
-        font-size: $resFont20;
-    }
-
-    .resfontmd24 {
-        font-size: $resFont24;
-    }
-    .resfontmd28 {
-        font-size: $resFont28;
-    }
-
-    .resfontmd40 {
-        font-size: $resfont40;
-    }
-
-    .resfontmd50 {
-        font-size: $resfont50;
-    }
-}
-
-@include media-breakpoint-down(sm) {
-    .resfontsm28 {
-        font-size: $resFont28;
-    }
-    .resfontsm16v {
-        font-size: $resFont16V;
-    }
-    .resfontsm35 {
-        font-size: $resfont35;
-    }
-
-    .resfontsm13 {
-        font-size: $resfont13;
-    }
+.space0_02 {
+  letter-spacing: $space0_02;
 }

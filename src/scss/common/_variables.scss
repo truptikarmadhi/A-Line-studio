@@ -6,82 +6,47 @@ $color-BFBFBF: #bfbfbf;
 $color-666666: #666666;
 $color-AFAFAF: #afafaf;
 $color-1d1d1d: #1d1d1d;
-$color-FEFFB9: #FEFFB9;
-$color-C3FFB9: #C3FFB9;
-$color-B9FFFB: #B9FFFB;
-$color-BAB9FF: #BAB9FF;
-$color-FEB9FF: #FEB9FF;
-$color-FFB9B9: #FFB9B9;
-$color-FEFFB9: #FEFFB9;
-
+$color-FEFFB9: #feffb9;
+$color-C3FFB9: #c3ffb9;
+$color-B9FFFB: #b9fffb;
+$color-BAB9FF: #bab9ff;
+$color-FEB9FF: #feb9ff;
+$color-FFB9B9: #ffb9b9;
+$color-FEFFB9: #feffb9;
 
 /*******************************************************************************
 ******************************* FONTS VARIABLES *******************************
 *******************************************************************************/
-// $font12: 12px;
-// $font14: 14px;
-// $font17: 17px;
-// $font19: 19px;
-// $font23: 23px;
-// $font28: 28px;
-// $font38: 38px;
-// $font48: 48px;
-// $font57: 57px;
-// $font80: 80px;
-// $font105: 105px;
-// $font115: 115px;
-// $font134: 134px;
-// $font234: 234px;
-// $font274: 274px;
-// $font288: 288px;
-// $resfont20: 20px;
-// $resfont26: 26px;
-// $resfont30: 30px;
-// $resfont34: 34px;
-// $resfont35: 35px;
-// $resfont42: 42px;
-// $resfont46: 46px;
-// $resfont60: 60px;
-// $resfont100: 100px;
-
-// em
-
-$fontX: 1.2em;
-$font2: 2em;
-$font2X: 2.5em;
-$font4: 4em;
-$font4X: 4.2em;
-$font6: 6em;
-$font7: 7em;
-$font14: 14.3vw;
-$font16: 16vw;
-$font12: 12vw;
-$font6V: 6vw;
-$resfont8: 8vw;
-$resFont16V: 16vw;
-$resfont13: 13vw;
-$resFont14: 14px;
-$resFont16: 16px;
-$resFont18: 18px;
-$resFont20: 20px;
-$resFont24: 24px;
-$resFont28: 28px;
-$resfont35: 35px;
-$resfont40: 40px;
-$resfont50: 50px;
+$font0_9: 0.9vw; //17.28px
+$font1_1: 1.1vw; //21.12px
+$font1_2: 1.2vw; //23.04px
+$font1_39: 1.39vw; //26.68px
+$font1_5: 1.5vw; //28.8px
+$font1_8: 1.8vw; //34.56px
+$font2: 2vw; //38.4px
+$font2_5: 2.5vw; //48px
+$font3_35: 3.35vw; //64.32px
+$font3_5: 3.5vw; //67.2px 
+$font4_1: 4.1vw; //78.72px
+$font4_2: 4.2vw; //80.64px
+$font6: 6vw; //115px
+$font7: 7vw; //134.4px
+$font12_1: 12.1vw; //234.24px
+$font14_3: 14.3vw; //274.56px
+$font15: 15vw; //288px
 
 /*******************************************************************************
 ******************************* LINE HEIGHT *******************************
 *******************************************************************************/
-$leadingX: 1.1;
-$leadingY: 1.2;
+$leading1_1: 1.1;
+$leading1_2: 1.2;
 $leading23: 23px;
 $leading48: 48px;
 /*******************************************************************************
 ******************************* LETTER SPACING *******************************
 *******************************************************************************/
-$spaceX: 1.2px;
-$spaceY: .02em;
+$space1_2: 1.2px;
+$space0_02: 0.02em;
 
 /*******************************************************************************
 ******************************* ANIMATION VARIABLES ****************************
