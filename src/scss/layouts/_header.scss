@@ -1,0 +1,132 @@
+.header {
+
+    background-color: rgba($black, 0);
+
+    &.white-header {
+        .header-logo {
+            color: $white !important;
+        }
+
+        .menu-line {
+            background-color: $white !important;
+        }
+    }
+
+    .menu {
+        width: 76px;
+
+        @include media-breakpoint-down(md) {
+            width: 40px;
+
+            .menu-line {
+                &:nth-child(2) {
+                    margin-top: 12px !important;
+                }
+            }
+        }
+    }
+
+    .bottom-nav {
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+
+        .menu-container {
+            .menu-logo {
+                top: 15px;
+                left: 30px;
+                @include media-breakpoint-down(md){
+                    left: 15px;
+                    top: 10px;
+                }
+            }
+
+            .close-icon {
+                right: 15px;
+                top: 5px;
+                height: 105px;
+                width: 105px;
+
+                @include media-breakpoint-down(md) {
+                    right: 5px;
+                    top: 5px;
+                    height: 70px;
+                    width: 70px;
+                }
+            }
+
+            .menu-link {
+                a {
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        background-color: $white;
+                        height: 1px;
+                        width: 0;
+                        left: 0;
+                        transition: all 0.3s ease-in-out;
+                        transform-origin: right;
+                    }
+                }
+
+                &:hover {
+                    a {
+                        &::after {
+                            width: 100%;
+                            transform-origin: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sub-header-main {
+    .sub-header {
+        // z-index: 350;
+        transition: transform .7s cubic-bezier(.819, .042, .129, 1.001);
+
+        &.sub-header-anim {
+            z-index: 5;
+            position: fixed;
+            opacity: 1;
+            transition-duration: .5s;
+            transition-timing-function: cubic-bezier(.404, -.005, .257, 1.007);
+            transform: translate(-1.5%, -35%) scale(0.14);
+
+            @include media-breakpoint-down(md) {
+                background: #fff;
+                left: 0;
+                right: 0;
+                top: 25px !important;
+                transform: translateY(25px);
+                padding: 0 15px 10px;
+            }
+
+            .active-link {
+                color: $black !important;
+            }
+
+            .not-active {
+                color: $color-BFBFBF !important;
+            }
+        }
+
+        a {
+            transition: color .2s;
+
+            &:hover {
+                opacity: 0.6;
+                transition: color .2s;
+            }
+        }
+
+    }
+}

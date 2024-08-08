@@ -1,0 +1,247 @@
+.hero-section {
+    max-height: 100vh;
+    margin-top: -74px;
+
+    .span-arrow-hover {
+        &:after {
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: 100%;
+            background-color: $black;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    .arrows-container {
+        z-index: -1;
+
+        .arrows-wrap {
+            width: 40vw;
+            max-width: 45vw;
+            min-height: 35vw;
+            max-height: 40vw;
+
+            .arrow-image {
+                opacity: 0;
+
+                &.show-image {
+                    opacity: 1;
+                    width: 400px;
+                }
+            }
+        }
+    }
+
+    .see-more {
+        bottom: 40px;
+        top: auto;
+        left: 40px;
+
+        .svg-arrow {
+            width: 20px;
+        }
+    }
+}
+
+.multi-color-line {
+    animation-name: colorChangeLine;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    @keyframes colorChangeLine {
+        0% {
+            background-color: #9738AF;
+        }
+
+        20% {
+            background-color: #CA1414;
+        }
+
+        40% {
+            background-color: #C0D005;
+        }
+
+        60% {
+            background-color: #38AF52;
+        }
+
+        80% {
+            background-color: #3844AF;
+        }
+
+        100% {
+            background-color: #9738AF;
+        }
+    }
+}
+
+.multi-color-text {
+
+    animation-name: colorChangeTxt;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    @keyframes colorChangeTxt {
+        0% {
+            color: #9738AF;
+        }
+
+        20% {
+            color: #CA1414;
+        }
+
+        40% {
+            color: #C0D005;
+        }
+
+        60% {
+            color: #38AF52;
+        }
+
+        80% {
+            color: #3844AF;
+        }
+
+        100% {
+            color: #9738AF;
+        }
+    }
+}
+
+.video-slider {
+    .video-hero-embed {
+        height: 50.75vw;
+        min-height: 100vh;
+    }
+}
+
+.feature-section {
+    .feature-main {
+        .feature-content {
+            width: 50%;
+
+            &:first-child {
+                width: 100%;
+
+                .feature-video {
+                    height: 56vw;
+
+                    video {
+                        display: block;
+                    }
+                }
+            }
+
+            .feature-video {
+                height: 500px;
+
+                @media (max-width:1440px) {
+                    height: 400px;
+                }
+                @media (max-width:1300px) {
+                    height: 350px;
+                }
+
+                video {
+                    display: none;
+                }
+
+                &:hover {
+                    .feature-images {
+                        display: none;
+                    }
+
+                    video {
+                        display: block;
+                    }
+                }
+            }
+
+            .feature-title {
+                @media (max-width:767.98px) and (min-width:576px) {
+                    display: flex;
+
+                    span {
+                        width: 50%;
+                    }
+                }
+            }
+
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.news-section {
+    .read-more {
+        letter-spacing: .02em;
+        text-underline-offset: 4px;
+
+        &:hover {
+            color: $black !important;
+        }
+    }
+
+    .news-content-main {
+        .news-image {
+            height: 600px;
+
+            @include media-breakpoint-down(lg) {
+                height: 300px
+            }
+        }
+
+        .news-title {
+            padding-right: 9%;
+        }
+
+        .news-sub-title {
+            padding-right: 10%;
+        }
+
+        .news-link {
+            letter-spacing: .02em;
+
+            &::after {
+                content: '';
+                position: absolute;
+                height: 1px;
+                left: 0;
+                width: 100%;
+                background: $color-BFBFBF;
+                bottom: -2px;
+            }
+
+            &:hover::after {
+                transform-origin: left;
+                transition: width 0.5s ease;
+            }
+        }
+    }
+}
+
+.about-section {
+    .about-title {
+        padding-right: 20%;
+    }
+
+    .about-logo {
+        .about-logo-image {
+            height: 450px;
+
+            @include media-breakpoint-down(md) {
+                height: 300px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                height: 150px;
+            }
+        }
+    }
+}

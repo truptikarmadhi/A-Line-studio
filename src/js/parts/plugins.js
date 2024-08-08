@@ -1,0 +1,8 @@
+
+export class Plugins{
+
+  init(){
+
+  }
+
+}

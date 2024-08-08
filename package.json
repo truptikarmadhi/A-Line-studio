@@ -1,0 +1,42 @@
+{
+  "name": "setup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "ISC",
+  "scripts": {
+    "dev": "yarn run build:scss && yarn run build:js",
+    "dev-only": "yarn dev && yarn browser-sync",
+    "build:scss": "node-sass src/scss/main.scss public/assets/css/main.css --no-source-map",
+    "build:js": "webpack --mode=production",
+    "con:build": "concurrently \"yarn sass-watch\" \"yarn dev-only\"",
+    "build": "yarn con:build --no-warnings",
+    "sass-watch": "sass --watch src/scss:public/assets/css",
+    "browser-sync": "browser-sync start --server --files 'public/assets/css/*.css' 'public/assets/js/*.js' 'public/*.html' --no-notify"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "babel-loader": "^9.1.3",
+    "concurrently": "^8.2.0",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1",
+    "sass": "^1.64.1",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-watch": "^0.2.0"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^5.0.20",
+    "@popperjs/core": "^2.11.8",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.1",
+    "fancybox": "^3.0.1",
+    "jquery": "^3.7.0",
+    "masonry-layout": "^4.2.2",
+    "popper.js": "^1.16.1",
+    "select2": "^4.1.0-rc.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.1.9"
+  }
+}

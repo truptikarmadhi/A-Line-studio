@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Victorserif';
+    src: url('../../../public/assets/fonts/VictorSerif-50Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neuehaasgrotdisp 55roman';
+    src: url('../../../public/assets/fonts/NeueHaasGrotDisp-55Roman.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neuehaasgrotdisp';
+    src: url('../../../public/assets/fonts/NeueHaasGrotDisp-45Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+.neuehaasgrotdisp-55 {
+    font-family: "Neuehaasgrotdisp 55roman";
+}
+.neuehaasgrotdisp-45 {
+    font-family: "Neuehaasgrotdisp";
+}
+.victorserif {
+    font-family: "Victorserif";
+}
